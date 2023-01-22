@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: auto;
+  padding: 3rem 0 0 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.herader__title {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.main {
+  width: 100%;
+  padding: 2.5rem;
+  margin: 1rem auto;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.input {
+  padding: 0.4rem 0.3rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+  /* justify-content: space-evenly; */
+  opacity: 0;
+}
+
+.country {
+  width: 330px;
+  border-radius: 5px;
+  /* overflow: hidden; */
+  box-shadow: 5px 10px 10px #c7c5c5;
+  transition: 1s ease-in-out;
+  background-color: white;
+}
+
+.country-img {
+  width: 100%;
+}
+.country-img__item {
+  width: 100%;
+}
+
+.country__title {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.country__subtitle {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  color: rgb(167, 167, 167);
+}
+
+.country-data {
+  width: auto;
+  padding: 1.4rem;
+}
+
+.country__text {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.span {
+  padding-right: 1rem;
+}
+
+.neighbour {
+  transform: scale(0.8);
+}
+
+.neighbour::before {
+  content: "Neighbour Country";
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  left: 20%;
+  top: -30px;
+  color: rgb(167, 167, 167);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-10rem);
+}
+
+.hidden2 {
+  opacity: 0;
+  transform: translateX(-10rem);
+}
+
+.appears {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease-in-out;
+}
+
+.appears2 {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1s ease-in-out;
+}
